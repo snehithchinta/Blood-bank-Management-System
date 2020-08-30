@@ -1,0 +1,128 @@
+<!doctype html>
+<head>
+    <title>
+        Blood Bank Admin
+    </title>
+    <style>
+
+    body {
+           
+           background-image: url("RedBloodCells3.jpg");
+           height: 500px; /* You must set a specified height */
+background-position: center; /* Center the image */
+    background-attachment: fixed;
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; /* Resize the background image to cover the entire container */
+   
+    }
+    div.transbox {
+  margin: 10px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+div.transbox1 {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+div.head{
+    font-weight: bold;
+  color: #000000;text-align:center;
+  font-size:60px; 
+}
+td{
+    width:700px;
+    font-size:30px;
+    text-align:center;
+}
+    </style>
+    </head>
+<body >
+ <div class="transbox">
+        <a href="home.html"><img width="50px" height="50px" src="home.jpg"></a>
+        <a href="admin.html"><img width="50px" height="50px" src="admin.png"></a>
+ <center><div class="head">BLOOD BANK</div> </center><br><br>
+ </div>
+ <div class="transbox1">
+    <table border="3px">
+        <tr class="tabs" >
+               <td > <a href="donations.html">Donations List</a></td>
+               <td ><b>Recipient List</b></td>
+        </tr>
+    </table>  
+     <center><br><br>
+  <table>
+      <form action="recipientlist.php" method="POST">
+          <tr>
+              <td>
+                    Blood Group
+              </td>
+              <td>
+                <select name="bg">
+                    <option value="O+" name="bg">O+</option>
+                    <option value="O-" name="bg">O-</option>
+                    <option value="A+" name="bg">A+</option>
+                    <option value="A-" name="bg">A-</option>
+                    <option value="B+" name="bg">B+</option>
+                    <option value="B-" name="bg">B-</option>
+                    <option value="AB+" name="bg">AB+</option>
+                    <option value="AB-" name="bg">AB-</option>
+                </select>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  Quanitity Used
+              </td>
+              <td>
+                  <input type="text" name="Quantity">
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  Date Blood is Used
+                </td>
+                <td>
+                    <input type="date" name="date">
+                </td>
+          </tr>
+          <tr>
+              <td>
+                  Hospital
+              </td>
+              <td>
+                    <select name="hospital">
+                            <option value="Katuri General Hospital" name="hospital">Katuri General Hospital</option>
+                            <option value="Apollo Medical Hospital" name="hospital">Apollo Medical Hospital</option>
+                            <option value="Gandhi Medical Hospital and College" name="hospital">Gandhi Medical Hospital and College</option>
+                            <option value="Bombay Hospital" name="hospital">Bombay Hospital</option>
+                            <option value="Life Care Hospital" name="hospital">Life Care Hospital</option>
+                            <option value="Remedy Medical Hospital" name="hospital">Remedy Medical Hospital</option>
+                            <option value="Omni Multi Speciality Hospital" name="hospital">Omni Multi Speciality Hospital</option>
+                            <option value="Yashoda Hospitals" name="hospital">Yashoda Hospitals</option>
+                            <option value="Continental Hospital" name="hospital">Continental Hospital</option>
+                            <option value="Sunshine Medical Hospital" name="hospital">Sunshine Medical Hospital</option>
+                        </select>  
+              </td>
+          </tr>
+          <tr>
+                <td>
+                    Email of Recipient
+                </td>
+                <td>
+                    <input type="text" name="email">
+                </td>
+            </tr>
+          <tr>
+                <td colspan="2" ><button type="submit" >Submit</button></td>
+            </tr>
+            
+      </form>
+  </table></center>
+</div>
+</body>
+</html>

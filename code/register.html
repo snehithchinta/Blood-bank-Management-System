@@ -1,0 +1,166 @@
+<!doctype html>
+<head>
+    <title>
+        Blood Bank
+    </title>
+    <style>
+
+    body {
+           
+           background-image: url("RedBloodCells3.jpg");
+           height: 500px; /* You must set a specified height */
+background-position: center; /* Center the image */
+    background-attachment: fixed;
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; /* Resize the background image to cover the entire container */
+   
+    }
+    div.transbox {
+  margin: 10px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+div.transbox1 {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+div.head{
+    font-weight: bold;
+  color: #000000;text-align:center;
+  font-size:60px; 
+}
+td{
+    width:350px;
+    font-size:30px;
+    text-align:center;
+}
+    </style>
+    </head>
+<body >
+ <div class="transbox">
+        <a href="home.html"><img width="50px" height="50px" src="home.jpg"></a>
+ <a href="admin.html"><img width="50px" height="50px" src="admin.png"></a>
+ <center><div class="head">BLOOD BANK</div> </center><br><br>
+  </div>
+  <div class="transbox1">
+     <table border="3px">
+         <tr class="tabs" >
+                <td > <a href="search.html">Search for Blood</a></td>
+                <td ><a href="about.html">About Us</a></td>
+                <td ><b> Register</b></td>
+                <td > <a href="login.html">Login</a></td>
+         </tr>
+     </table> 
+     <center>
+         <br><br>
+     <table>
+         <form action="register.php" method="POST">
+            
+         <tr>
+             <td>
+                 Name
+             </td>
+             <td>
+                <input type="text" name = "name">
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 Date Of Birth
+             </td>
+             <td>
+                 <input type="date" name = "dob">
+             </td>             
+         </tr>
+         <tr>
+            <td>
+                Gender
+            </td>
+            <td>
+                <input type="radio" value = "Male" class="gender" name ="gender">Male
+                <input type="radio" value = "Female" class="gender" name ="gender">Female
+                <input type="radio" value = "Other" class="gender" name ="gender">Other
+            </td>
+         </tr>
+         <tr>
+             <td>
+                 Weight
+             </td>
+             <td>
+                 <input type="text" name="Weight">
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 Phone number
+             </td>
+             <td>
+                 <input type="" name="phone">
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 Street No
+             </td>
+             <td>
+                 <input type="text" name="street">
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 City
+             </td>
+             <td>
+                 <input type="text" name="city">
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 State
+             </td>
+             <td>
+                 Telengana
+             </td>
+         </tr>
+         <tr>
+                <td>
+                    Email
+                </td>
+                <td>
+                    <input type="text" name="email">
+                </td>
+            </tr>
+            
+         <tr>
+             <td>
+                 Password
+             </td>
+             <td>
+                 <input type="password" name="password">
+             </td>
+         </tr>
+         <tr>
+                <td>
+                    Confirm Password
+                </td>
+                <td>
+                    <input type="password" name="confirm">
+                </td>
+                </tr>
+         <tr>
+                <td colspan="2">
+                <center><button type="submit">Register</button></center>
+            </td>
+                
+            </tr>
+            </form>
+     </table>
+    </center>
+     </div>
+     </body>
+     </html>  
